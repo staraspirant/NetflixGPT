@@ -1,9 +1,11 @@
 import { IMG_CDN_URL } from "../utils/constant";
 
 const MovieCard = ({ posterPath }) => {
+  console.log(posterPath);
+  console.log(IMG_CDN_URL);
   return (
     <div>
-      <img src={IMG_CDN_URL + posterPath} alt="MovieCard" />
+      <img alt="movie card" src={IMG_CDN_URL + posterPath} />
     </div>
   );
 };
